@@ -24,7 +24,7 @@ $this->title = 'Peace Chan Blog';
             ?>
             <?}
             else{
-                echo "No post avaliable right now! Let's create post by going post section";
+                echo "No post available right now! Let's create post by going post section";
             }?>
 
 

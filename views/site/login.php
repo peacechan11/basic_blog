@@ -42,6 +42,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php ActiveForm::end(); ?>
 
     <div class="col-lg-offset-1" style="color:#999;">
-       <strong>Doesn't have an account? Click here to <a href="<?=Url::to(['/site/register'])?>">Register</a></strong>
+       <strong>Doesn't have an account? Click here to <a href="<?=Url::to(['/site/register'])?>">Register account</a></strong>
     </div>
 </div>
