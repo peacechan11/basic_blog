@@ -76,8 +76,8 @@ class NewUser extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     {
         return self::findOne(['accessToken'=>$token]);
     }
-    public static function findByUsername($username){
-        return self::findOne(['username'=>$username]);
+    public static function findByEmail($email){
+        return self::findOne(['email'=>$email]);
     }
 
     public function getId()
