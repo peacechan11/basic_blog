@@ -11,15 +11,15 @@ use components\SmallBody;
 <div class="post-preview">
     <a href="<?=Url::toRoute(['/post/view','id'=>$model->id])?>">
         <h2 class="post-title">
-            <?=$model->title?>
+            <?=Html::encode($model->title) ?>
         </h2>
     </a>
         <h3 class="post-subtitle">
-            <?=$model->description?>
+            <?=Html::encode($model->description)?>
         </h3>
     </a>
     <p class="post-meta">Posted by
-        <strong><?=$model->postedBy->username?></strong>
-        on <?=$model->created_at?></p>
+        <strong><?=Html::encode($model->postedBy->username)?></strong>
+        on <?=Html::encode($model->created_at)?></p>
 </div>
 <hr>
